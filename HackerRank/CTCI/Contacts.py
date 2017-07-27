@@ -1,6 +1,6 @@
 from string import ascii_lowercase as ascii
 from pprint import pprint
-
+from time import *
 class Node:
     def __init__(self, parent , val):
         self.parent = parent 
@@ -45,6 +45,7 @@ def findInTrie(entry, trie):
 fp = open("test.txt") 
     
 root = Node(' ', ' ')   
+start = clock()
 for z in  range(int(fp.readline())):
     trie = root 
     op, entry = fp.readline().split()
@@ -52,3 +53,5 @@ for z in  range(int(fp.readline())):
         addToTrie(entry, trie)
     if op == 'find':
         print ( findInTrie(entry, trie) )
+
+print("Time took: ", clock() - start)

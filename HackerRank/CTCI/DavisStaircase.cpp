@@ -1,5 +1,6 @@
 /*
-    Same as fib 
+    Same as fib
+    Opps  
 */
 #include <cmath>
 #include <stack>
@@ -21,7 +22,6 @@ int main(){
         cin >> n;
         
         
-             
         if (n < 3 ) cout <<  n << endl;
         else{
             int step_1 = 1;
