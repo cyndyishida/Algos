@@ -1,6 +1,15 @@
-from string import ascii_lowercase as ascii
-from pprint import pprint
-from time import *
+'''
+Algo: use a trie to solve algo.
+node that contains a parent, value, dictionary of children, and a count of how many times it appears inside a word
+
+when adding, iterate over the first 6 characters, if word is longer store the rest in a single node increment the node every it could appear in the path (python classes are default mutable)
+for find in trie,
+create a boolean to detect non found
+for each character in the entry if the node is a child of the previous node keep going and make that the new current node, else its no match and break out 
+once your done traverseing return the node count for the last node else return 0
+'''
+
+
 class Node:
     def __init__(self, parent , val):
         self.parent = parent 
@@ -23,10 +32,17 @@ class Node:
                 
 
 def addToTrie(entry, trie):
-    for i in entry:
-        node = trie.add_child(i)
-        node.count +=1
-        trie = node
+    for i in range(len(entry)):
+        if i <6:
+            node = trie.add_child(entry[i])
+            node.count +=1
+            trie = node
+        else:
+            node = trie.add_child(entry[i:])
+            node.count +=1
+            trie = node
+            break
+
     node.add_child('*')
     
 def findInTrie(entry, trie): 
@@ -42,16 +58,13 @@ def findInTrie(entry, trie):
     return 0 if no_match else node.count
     
     
-fp = open("test.txt") 
     
 root = Node(' ', ' ')   
-start = clock()
-for z in  range(int(fp.readline())):
+for z in  range(int(input())):
     trie = root 
-    op, entry = fp.readline().split()
+    op, entry = input().split()
     if op == 'add':
         addToTrie(entry, trie)
     if op == 'find':
         print ( findInTrie(entry, trie) )
 
-print("Time took: ", clock() - start)
