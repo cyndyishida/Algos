@@ -28,7 +28,6 @@ string is_prime(int n)
     return n == 1 ||  abs( shorter - ceil(shorter) ) < 0.001   ? "Not prime": "Prime";
     
     
-    
 }
 
 
