@@ -1,0 +1,6 @@
+- "w" go to beginning of word
+- "e" go to end of word  
+- "b" backward to beginning of word
+- "dw" delete word
+- "^" beginning of line 
+- N"w" - go N amounts of words forward  
