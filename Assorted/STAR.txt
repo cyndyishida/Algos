@@ -1,0 +1,3 @@
+1. when i TA'ed i made a project that merge sort on a linked list 
+    my rationale is when you could be in a platform where you cannot sorry allocating a contigious amount of memory for that amount of data
+    i put on the specs that space complexity because students get confused with defining big O for memory when it comes to recursive stack calls 
