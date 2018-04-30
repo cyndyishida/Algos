@@ -15,7 +15,7 @@ def bfs(n, m, edges, s):
     if s in adj_list:
         stack =[(j, 1) for j in adj_list[s]]
         in_stack = set(adj_list[s])
-:w
+
         
         while stack:
             curr, level = stack.pop(0)
