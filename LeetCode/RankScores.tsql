@@ -1,3 +1,5 @@
+-- NOTE: i basically reinvinted the wheel to compute a dense rank :) for the rank column 
+
 /* Write your T-SQL query statement below */
 SELECT B.Score, B.Rank
 FROM Scores
