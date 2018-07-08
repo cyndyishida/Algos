@@ -1,0 +1,15 @@
+/* Write your T-SQL query statement below */
+SELECT B.Score, B.Rank
+FROM Scores
+INNER JOIN (
+    SELECT 
+        A.Score as Score ,row_number() OVER(ORDER BY A.SCORE DESC) as Rank 
+    FROM 
+        (SELECT DISTINCT Score 
+         FROM Scores ) 
+        as A) 
+    as B         
+ON 
+    B.Score  = Scores.Score 
+ORDER BY
+    B.Score DESC;
