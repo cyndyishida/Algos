@@ -1,0 +1,19 @@
+/* Write your T-SQL query statement below */
+
+
+
+DECLARE @row_count int =  (SELECT COUNT(distinct salary) FROM Employee)
+SELECT TOP 1 
+    case @row_count
+    when  1 then null
+    else A.Salary
+    end AS SecondHighestSalary
+FROM 
+(
+    SELECT DISTINCT TOP 2  Salary
+    FROM Employee 
+    Order By Salary Desc
+) A  
+ORDER BY A.Salary ASC ;
+
+
