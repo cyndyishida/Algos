@@ -1,0 +1,19 @@
+0. would you consider IMC a hft? 
+- by defintion hft 
+
+1. how much additional onboarding did you think you needed after the 6 week traineeship? 
+- 3 weeks with traders (market making)
+- 3 devpool (build tools, testing,agile methodologys) 
+- onboarding desk do tickets for 3 months on a bunch of different teams 
+
+2. how much of a grasp do you need to know about the trading details to do your job well?
+- first 2 weeks take care of it 
+
+3. With the end of writing code for low latency and the rise of AI based trading decisions, how do you think IMC has adapted to that?
+- care about speed, and care about AI an stuff too 
+
+4. What do you think of the recent absorptoins of HFT companies in the past few years?
+- top 10 market makers, we don't have a conceern of being out of business, anyone in the lower end it doesnt really matter  
+
+5. would you say that IMC is more a flat company or very heirarchical?  
+- very flat, direct manager is CTO 

@@ -16,19 +16,25 @@ def subsets(array, total, i ):
 
 
 # memoized solution (0.05)  
-def subset_memo(array, total, i, memo = {} ):
-    if not (total, i) in memo: 
-        if total == 0: 
-            memo[(total, i)] = 1
-        elif total < 0 or i < 0 : 
-            memo[(total, i)] = 0
-        else:
-            memo[(total, i)] = subset_memo(array, total - array[i] , i - 1, memo) + \
-subset_memo(array, total , i - 1, memo)
+def subset_memo(array, total, i, mem = {} ):
+    key = f"total: {total}, i: {i}"
+    if key in mem:
+        return mem[key]
+    if total ==0:
+        mem[key] = 1
+        return 1
+    elif total < 0:
+        mem[key] = 0 
+        return 0
+    elif i <0 :
+        mem[key] =  0 
+        return 0
+
+    else:
+        mem[key] = subsets(array, total - array[i], i -1) + subsets(array, total, i -1)
+        return mem[key] 
         
         
-        
-    return memo[(total,i)]
 
 
 def valid_sum(r, current_sum, c):
@@ -103,12 +109,10 @@ def subset_dp(array, total):
 
 
 
-x = [2,4,6,10]
+x = [2,4,6,10, 16, 8,8]
 
 total = 16 
 print("amount: ", subsets(x, total,len(x)-1 )) 
 y = {}
 print("amount: ", subset_memo(x, total,len(x)-1,y ))
 
-print("\n")
-print("amount: ", subset_dp(x, total))  
