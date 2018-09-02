@@ -3,7 +3,7 @@ Mostly just problems I did on Hackerrank and Leetcode
 
 
 
-#Important Notes
+# Important Notes
 Mostly from Algorithm Design Manual 
 ## Trees  
 ## Graphs 
