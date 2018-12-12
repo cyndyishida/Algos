@@ -1,0 +1,17 @@
+
+/*
+ Part 1. given a string return the sorted index of all of it's suffix's, 
+ Part 2. given the list of suffixes & a needle string, return a boolean whether the needle word
+ exists within the original string 
+*/
+
+/*
+    do a bisection, i.e. you have some bug you want to find which compiler the bug manifests,
+    given a script that you can feed into the compiler, return the compiler and exit status 
+    of the compiler where this bug first manifests 
+*/
+
+/*
+    given a ternery operator, you need to be able to resolve the type of the result when the if true value is a different type from the if false one. 
+*/
+
