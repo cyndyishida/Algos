@@ -1,1 +1,3 @@
 CppDebugging/*
+*.o
+*.out
