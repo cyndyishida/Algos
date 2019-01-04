@@ -1,4 +1,7 @@
 CppDebugging/*
+*/.DS_Store
+.DS_Store
+
 *.o
 *.out
 .*.swp
