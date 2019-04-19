@@ -7,6 +7,7 @@
 # what if there are no brackets  
 
 #a2[b3[c]]
+
 def get_all_nums(input_list, idx):
     int_val = []
     counter = 0
@@ -43,6 +44,7 @@ print(string_stack("a10[c]"))
 print(string_stack("a2[c]x2[d]"))
 print(string_stack("z1[a]"))
 print(string_stack("a2[b3[c]]"))
+print(string_stack("a3[b2[c]1[e]]d"))
 
 
 
