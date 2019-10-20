@@ -1,7 +1,16 @@
-CppDebugging/*
-*/.DS_Store
-.DS_Store
-
+#
+# Ignore everywhere 
+#
+.DS_Store 
+# Byte compiled python modules.
+*.pyc
+# object files 
 *.o
+# executables 
 *.out
+# vim save files 
 .*.swp
+
+
+CppDebugging/*
+
